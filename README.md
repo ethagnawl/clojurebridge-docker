@@ -18,7 +18,7 @@ container (also consider building one-click executables)
 2. Clone this Git repository
 3. `cd` into the repository
 4. In your terminal, run `docker build -t clojurebridge-docker .` to build the "clojurebridge-docker" image
-5. In your terminal, run `docker run -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY dockerbridge-clojure` to start a container using the "clojurebridge-docker" image
+5. In your terminal, run `docker run -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY clojurebridge-docker` to start a container using the "clojurebridge-docker" image
 6. If everything went to plan, you should see LightTable
 
 ## Resources
