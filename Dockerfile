@@ -1,10 +1,5 @@
 FROM clojure
 
-# docker run -it \
-#        -v /tmp/.X11-unix:/tmp/.X11-unix \
-#        -e DISPLAY=unix$DISPLAY \
-#        dockerbridge-clojure
-
 RUN apt-get update && apt-get install -y \
     build-essential \
     git-core \
