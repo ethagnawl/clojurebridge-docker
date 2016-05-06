@@ -1,5 +1,9 @@
 # ClojureBridge Docker Container
 
+## About
+This project is an attempt at creating a Docker container that can be used by
+ClojureBridge participants. It's very much a WIP and contributions are welcome.
+
 ## Getting Started
 1. [Install Docker](https://docs.docker.com/) on your platform of choice
 (directions will differ based on your platform).
