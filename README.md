@@ -22,4 +22,5 @@ container (also consider building one-click executables)
 6. If everything went to plan, you should see LightTable
 
 ## Resources
+- [demo](https://www.youtube.com/watch?v=vTlErAkdkDY&feature=youtu.be)
 - https://blog.jessfraz.com/post/docker-containers-on-the-desktop/
