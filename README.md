@@ -11,3 +11,6 @@ ClojureBridge participants. It's very much a WIP and contributions are welcome.
 3. `cd` into the repository's directory folder
 4. In your terminal, run `docker build -t clojurebridge-docker .` to build the "clojurebridge-docker" image
 5. In your terminal, run `docker run -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY dockerbridge-clojure` to start a container using the "clojurebridge-docker" image
+
+## Resources
+- https://blog.jessfraz.com/post/docker-containers-on-the-desktop/
