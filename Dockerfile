@@ -1,20 +1,15 @@
-FROM clojure
+FROM clojure:lein-2.8.1
+
+RUN curl -sL https://deb.nodesource.com/setup_6.x -o nodesource_setup.sh
+RUN bash nodesource_setup.sh
 
 RUN apt-get update && apt-get install -y \
+    apt-utils \
     build-essential \
     git-core \
-    nodejs \
-    npm \
-    libgl1-mesa-dri
-
-RUN alias node=nodejs && \
-    ln -s /usr/bin/nodejs /usr/bin/node
-
-RUN wget https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein && \
-    mkdir -p ~/bin && \
-    mv lein ~/bin && \
-    chmod +x ~/bin/lein && \
-    ~/bin/lein
+    libgconf-2-4 \
+    libgl1-mesa-dri \
+    nodejs
 
 RUN cd ~ && \
     git clone https://github.com/LightTable/LightTable.git && \

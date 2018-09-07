@@ -20,6 +20,7 @@ container (also consider building one-click executables)
 4. In your terminal, run `docker build -t clojurebridge-docker .` to build the "clojurebridge-docker" image
 5. In your terminal, run `docker run -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY clojurebridge-docker` to start a container using the "clojurebridge-docker" image
 6. If everything went to plan, you should see LightTable
+7. If you see an error message which says, "No protocol specified", try running `xhost local:root` or `xhost local:docker`, depending on your config and preferences
 
 ## Resources
 - [demo](https://www.youtube.com/watch?v=vTlErAkdkDY&feature=youtu.be)
