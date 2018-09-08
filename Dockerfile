@@ -11,9 +11,7 @@ RUN apt-get update && apt-get install -y \
     libgl1-mesa-dri \
     nodejs
 
-RUN cd ~ && \
-    git clone https://github.com/LightTable/LightTable.git && \
-    cd LightTable && \
-    script/build.sh
+RUN wget -O lighttable https://github.com/LightTable/LightTable/releases/download/0.8.1/lighttable-0.8.1-linux.tar.gz
+RUN tar -xzf lighttable
 
-CMD ~/LightTable/builds/lighttable-0.8.1-linux/LightTable
+CMD lighttable-0.8.1-linux/LightTable
